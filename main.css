@@ -1,0 +1,165 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #131416;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header{
+    background: url(./img/header-1.jpg) no-repeat center/100%;
+    height: 700px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo p{
+    color: #B89A7F;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.logo span{
+    color: white;
+}
+
+.logo ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.logo a{
+    margin-right: 25px;
+    color: #fff;
+}
+
+.logo a, .telephone{
+    transition: 0.5s;
+}
+
+.logo a:hover, .telephone:hover{
+    color: #B89A7F;
+}
+
+.wrapper{
+    margin-top: 100px;
+}
+
+.title{
+    color: #B89A7F;
+    font-size: 3em;
+    line-height: 1.4em;
+    margin-bottom: 60px;
+}
+
+.btn{
+    background: #B89A7F;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: #333333;
+    font-weight: bold;
+    box-shadow: 0px 2px 20px 5px rgba(255,255,255,0.3);
+}
+
+/* why */
+
+.why{
+    margin: auto;
+    width: 430px;
+}
+
+.why h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.why p{
+    margin-bottom: 40px;
+}
+
+.why span{
+    background: #B89A7F;
+    border-radius: 100px;
+    padding: 10px 15px;
+    color: #131416;
+    margin-right: 15px;
+}
+
+/* services */
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.srvices_h2{
+    margin-top: 100px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.services_item{
+    width: 25%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services_photo{
+    position:absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    height: 500px;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.services_title{
+    width: 200px;
+    z-index: 2;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    color: #fff;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.services_title:hover{
+    color: #B89A7F;
+}
+
+.services_photo:hover{
+    opacity: 0.2;
+}
