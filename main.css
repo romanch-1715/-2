@@ -1,0 +1,305 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #131416;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(./img/header-1.jpg) no-repeat center/100%;
+  height: 700px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo p {
+  color: #b89a7f;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.logo span {
+  color: white;
+}
+
+.logo ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.logo a {
+  margin-right: 25px;
+  color: #fff;
+}
+
+.logo a,
+.telephone {
+  transition: 0.5s;
+}
+
+.logo a:hover,
+.telephone:hover {
+  color: #b89a7f;
+}
+
+.wrapper {
+  margin-top: 100px;
+}
+
+.title {
+  color: #b89a7f;
+  font-size: 3em;
+  line-height: 1.4em;
+  margin-bottom: 60px;
+}
+
+.btn {
+  background: #b89a7f;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 20px;
+  color: #333333;
+  font-weight: bold;
+  box-shadow: 0px 2px 20px 5px rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  border: 2px solid #b89a7f;
+  background: #131416;
+  color: #b89a7f;
+  box-shadow: none;
+}
+
+.social{
+  display: flex;
+  padding-top: 5px;
+}
+
+.social img{
+  width: 30px;
+}
+
+/* why */
+
+.why {
+  margin: auto;
+  width: 430px;
+}
+
+.why h2 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.why p {
+  margin-bottom: 40px;
+}
+
+.why span {
+  background: #b89a7f;
+  border-radius: 100px;
+  padding: 10px 15px;
+  color: #333333;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* services */
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.srvices_h2 {
+  margin-top: 100px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.services_item {
+  width: 25%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services_photo {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  height: 500px;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.services_title,
+.services_price {
+  width: 200px;
+  z-index: 2;
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  color: #fff;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+.services_price {
+  top: 210px;
+  font-size: 18px;
+  background: #b89a7f;
+  width: 150px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.services_title:hover {
+  color: #b89a7f;
+}
+
+/* how */
+
+.how_title_h2 {
+  margin-top: 100px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.how_work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.how .container {
+  background: url("/img/Mustang.png") no-repeat bottom right;
+}
+
+.how_item {
+  display: flex;
+  width: 50%;
+  height: 100px;
+  align-items: center;
+}
+
+.how_title {
+  margin-left: 20px;
+}
+
+.icon {
+  background: #b89a7f;
+  padding: 10px 12px;
+  border-radius: 100px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.icon img {
+  width: 40px;
+}
+
+.how_item a {
+  margin-left: 25px;
+  box-shadow: none;
+}
+
+/* form_maps*/
+
+.form_maps .container{
+  background: url(/img/карта.png) no-repeat center/100%;
+  height: 400px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.form{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  background: #131416;
+  width: 275px;
+  top: 80px;
+  left: 100px;
+  padding-bottom: 25px;
+}
+
+.form_text{
+  text-align: center;
+}
+
+input, button{
+  width: 200px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+input{
+  padding: 15px 20px;
+}
+
+.form_maps button{
+  background: #b89a7f;
+  color: #fff;
+  padding: 5px;
+  color: #333333;
+  font-weight: bold;
+  transition: 0.5s;
+  height: 40px;
+}
+
+.form_maps button:hover {
+  border: 2px solid #b89a7f;
+  background: #131416;
+  color: #b89a7f;
+  box-shadow: none;
+}
+/* footer */
+
+.footer{
+  margin-top: 100px;
+  background: #000;
+}
