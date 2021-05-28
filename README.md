@@ -1,4 +1,4 @@
 # -2
 сайт про послуги для автомобілів
 Roman and Yaroslav
-https://deteling.herokuapp.com/
+https://deteling.herokuapp.com/#yak1
